@@ -1,0 +1,144 @@
+format = """
+$directory \
+$git_branch \
+$git_status \
+$fill \
+$c \
+$elixir \
+$elm \
+$golang \
+$haskell \
+$java \
+$julia \
+$nodejs \
+$nim \
+$rust \
+$scala \
+$python\n  \
+[󱞪 ](fg:iris)
+"""
+
+palette = "rose-pine-moon"
+
+[palettes.rose-pine-moon]
+overlay = '#393552'
+love = '#eb6f92'
+gold = '#f6c177'
+rose = '#ea9a97'
+pine = '#3e8fb0'
+foam = '#9ccfd8'
+iris = '#c4a7e7'
+
+[directory]
+format = " [$path]($style)"
+style = "fg:iris"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+Documents = "󰈙"
+Downloads = " "
+Music = " "
+Pictures = " "
+
+[fill]
+style = "fg:overlay"
+symbol = " "
+
+[git_branch]
+format = "on [$symbol $branch]($style) "
+style = "fg:foam"
+symbol = ""
+
+[git_status]
+style = "fg:love"
+format = '[$all_status$ahead_behind]($style) '
+disabled = true
+
+[time]
+disabled = false
+format = "[$time ]($style) "
+tyle = "fg:rose"
+time_format = "%I:%M%P"
+use_12hr = true
+
+[username]
+disabled = false
+format = "[󰣇 $user]($style)"
+show_always = true
+style_root = "fg:iris"
+style_user = "fg:iris"
+
+# Languages
+
+[c]
+style = "fg:pine"
+format = "[$symbol$version]($style) "
+disabled = false
+symbol = " "
+
+[elixir]
+style = "fg:pine"
+format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+disabled = false
+symbol = " "
+
+[elm]
+style = "fg:pine"
+format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+disabled = false
+symbol = " "
+
+[golang]
+style = "fg:pine"
+format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+disabled = false
+symbol = " "
+
+[haskell]
+style = "fg:pine"
+format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+disabled = false
+symbol = " "
+
+[java]
+style = "fg:pine"
+format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+disabled = false
+symbol = " "
+
+[julia]
+style = "fg:pine"
+format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+disabled = false
+symbol = " "
+
+[nodejs]
+style = "fg:pine"
+format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+disabled = false
+symbol = "󰎙 "
+
+[nim]
+style = "fg:pine"
+format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+disabled = false
+symbol = "󰆥 "
+
+[rust]
+style = "fg:pine"
+format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+disabled = false
+symbol = ""
+
+[scala]
+style = "fg:pine"
+format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+disabled = false
+symbol = " "
+
+[python]
+style = "fg:pine"
+format = "[$symbol$version]($style) "
+disabled = false
+symbol = ' '
