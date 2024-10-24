@@ -18,20 +18,26 @@ $python\n  \
 [󱞪 ](fg:iris)
 """
 
-palette = "rose-pine-moon"
+# Use the color palette
+palette = "dracula"
 
-[palettes.rose-pine-moon]
-overlay = '#393552'
-love = '#eb6f92'
-gold = '#f6c177'
-rose = '#ea9a97'
-pine = '#3e8fb0'
-foam = '#9ccfd8'
-iris = '#c4a7e7'
+# Define Dracula color palette
+[palettes.dracula]
+background = "#282a36"
+current_line = "#44475a"
+foreground = "#f8f8f2"
+comment = "#6272a4"
+cyan = "#8be9fd"
+green = "#50fa7b"
+orange = "#ffb86c"
+pink = "#ff79c6"
+purple = "#bd93f9"
+red = "#ff5555"
+yellow = "#f1fa8c"
 
 [directory]
 format = " [$path]($style)"
-style = "fg:iris"
+style = "fg:purple"
 truncation_length = 3
 truncation_symbol = "…/"
 
@@ -47,11 +53,11 @@ symbol = " "
 
 [git_branch]
 format = "on [$symbol $branch]($style) "
-style = "fg:foam"
+style = "fg:comment"
 symbol = ""
 
 [git_status]
-style = "fg:love"
+style = "fg:comment"
 format = '[$all_status$ahead_behind]($style) '
 disabled = true
 
@@ -138,7 +144,7 @@ disabled = false
 symbol = " "
 
 [python]
-style = "fg:pine"
+style = "fg:purple"
 format = "[$symbol$version]($style) "
 disabled = false
 symbol = ' '
