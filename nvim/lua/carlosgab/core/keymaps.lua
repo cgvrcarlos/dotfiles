@@ -2,7 +2,20 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
-keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+-- move lines
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- always center in move
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- better delete and paste
+keymap.set("x", "<leader>p", '"_dP', { desc = "Paste without replacing clipboard" })
+
+keymap.set("n", "<leader>y", '"+y')
+keymap.set("n", "<leader>Y", '"+y')
+keymap.set("v", "<leader>y", '"+y')
 
 -- increment and decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" })

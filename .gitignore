@@ -1,4 +1,9 @@
+
 # Folders to ignore
 go/
+lazygit/
 procps/
 yay/
+
+#Subfolders to ignore
+tmux/plugins/
