@@ -23,19 +23,15 @@ return {
 			ensure_installed = {
 				"html",
 				"lua_ls",
-				"pyright",
+				"ruff",
 			},
 		})
 
 		mason_tool_installer.setup({
 			ensure_installed = {
 				-- formatter
-				"black",
-				"isort",
 				"prettier",
 				"stylua",
-				-- linter
-				"pylint",
 			},
 		})
 	end,

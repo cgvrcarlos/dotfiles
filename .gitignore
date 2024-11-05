@@ -5,5 +5,8 @@ lazygit/
 procps/
 yay/
 
-#Subfolders to ignore
+# Subfolders to ignore
 tmux/plugins/
+
+# Version
+lazy-lock.json
